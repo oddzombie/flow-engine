@@ -58,10 +58,10 @@ export default class RuleEditComponent extends Component {
             </div>
             <div>
               <InputLabel htmlFor="true_id" className="label">
-                True ID
+                Next Rule if Passed:
               </InputLabel>
               <Select
-                label="True ID"
+                label="Next Rule if Passed:"
                 value={this.state.true_id || ''}
                 onChange={(e) => this.setState({ true_id: e.target.value, disabled: false })}
                 inputProps={{
@@ -81,10 +81,10 @@ export default class RuleEditComponent extends Component {
             </div>
             <div>
               <InputLabel htmlFor="false_id" className="label">
-                False ID
+                Next Rule if Failed:
               </InputLabel>
               <Select
-                label="False ID"
+                label="Next Rule if Failed: "
                 value={this.state.false_id || ''}
                 onChange={(e) => this.setState({ false_id: e.target.value, disabled: false })}
                 inputProps={{
