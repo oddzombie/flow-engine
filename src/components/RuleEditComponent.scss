@@ -1,0 +1,29 @@
+@import '../App.scss';
+
+.button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.error {
+  padding: 0;
+  border: 1px solid $error;
+  border-radius: 0;
+  .rule-body {
+    border: 1px solid $error;
+    border-radius: 10px;
+  }
+}
+
+.rule {
+  margin-bottom: 20px;
+}
+
+.rule-body {
+  color: #888;
+  margin: 20px -10px;
+  padding: 10px;
+  > div {
+    margin-left: 1em;
+  }
+}
